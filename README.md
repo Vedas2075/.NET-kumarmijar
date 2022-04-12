@@ -1,3 +1,3 @@
 # .NET-kumarmijar
 
-Hey Niggas!
+Hey Fellos!
