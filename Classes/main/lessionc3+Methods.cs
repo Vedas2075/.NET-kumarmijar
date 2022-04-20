@@ -21,13 +21,23 @@ class Methods
     }
 
     //4. Expressio syntax
-    string FormatName2(string firstName, string lastName) => $"{ lastName}, {firstName}";
+    string FormatName2(string firstName, string lastName) => $"{lastName}, {firstName}";
 
-    bool IsEven(short number) => number %2 ==0;
-
-    double Sum(params double[] numbers) => numbers.Sum();
-
+    bool IsEven(short number) => number % 2 ==0;
 
     //5. Varialble number of arguments
     public double Sum(params double[] numbers) => numbers.Sum();
+
+   //6. Optional arguments
+   public string Greet(string firstName, string lastName, string salutation = "Mr.") => 
+      $"Hello, {salutation} {firstName} {lastName}";
+
+   //7.Returning multiple values
+   public (double, double) CalcSumAndAverage()
+   {
+       double ay = 45.8;
+       double sum = 34555.6;
+       return (ay, sum);
+   }
+
 }
