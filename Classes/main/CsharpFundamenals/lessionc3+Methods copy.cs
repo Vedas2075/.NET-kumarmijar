@@ -14,7 +14,7 @@ class Methods
     }
     //3. return value amd two parameters
 
-    string FormatName(string firstNmae, string lastName)
+    string FormatName(string firstName, string lastName)
     {
         return $"{lastName}, {firstName}";
 
